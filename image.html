@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Image Effect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .hover-image {
+      width: 300px; /* Adjust size as needed */
+      filter: grayscale(100%);
+      transition: filter 0.4s ease;
+      border-radius: 8px; /* Optional: rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow */
+    }
+
+    .hover-image:hover {
+      filter: grayscale(0%);
+    }
+  </style>
+</head>
+<body>
+
+  <img class="hover-image" src="flower.jpg" alt="Hover to colorize">
+
+</body>
+</html>
+
+
